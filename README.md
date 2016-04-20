@@ -1,4 +1,4 @@
-# logstashsetup
+# logstash setup
 Logstash configuration that handles Nginx logs, and data being pulled from MongoDB
 
 I have posted my Logstash config file that pulls data from two sets of Kafka topics for processing.  
