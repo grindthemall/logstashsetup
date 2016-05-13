@@ -15,6 +15,6 @@ I do a second set of calculations that let me see how well my Nginx front ends, 
 
 There is one mutate gsub section where there are []'s around some "\".  This is intentional and required to make logstash properly process those characters, see this discussion:  https://discuss.elastic.co/t/how-to-replace-special-characters-with-a-logstash-filter/28240/2
 
-Should you wish to use this Nginx setup, let me know and I will publish my full set of configs for my nginx log file setups.
+I have added in the /usr/local/openresty/nginx/conf of this git page my nginx.conf and https.conf files that build the log messages I process with this logstash config.
 
 # This config yields between 3.5k and 5k messages/s per 4 CPU/16GB RAM machine.
