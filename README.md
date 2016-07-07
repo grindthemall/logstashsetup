@@ -1,10 +1,12 @@
 # logstash setup
-Logstash configuration that handles Nginx logs, and data being pulled from MongoDB
+Logstash configuration that handles Nginx logs, data being pulled from MongoDB, and data being pulled from the influxdb telegraf agent
 
-I have posted my Logstash config file that pulls data from two sets of Kafka topics for processing.  
+I have posted my Logstash config file that pulls data from multiple Kafka topics for processing.  
 
 The first set is data being sent from a MongoDB into Kafka, and is processed in one manner.
 The second set is data from my Nginx front end servers.
+The other sets are syslog and secure messages from all my servers
+THe final set is telegraf monitoring agent data
 
 The config file is pretty extensively commented so check that out first (lskafka.conf attached to this repo).
 
