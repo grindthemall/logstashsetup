@@ -19,4 +19,6 @@ There is one mutate gsub section where there are []'s around some "\".  This is 
 
 I have added in the /usr/local/openresty/nginx/conf of this git page my nginx.conf and https.conf files that build the log messages I process with this logstash config.  I run 4 nginx logs - error, body, http and https.  I only log a message body if the status code is above 399.  My rsyslog setup converts all the logs except the body log to proper json and sends those messages into kafka.  My logstash setup picks up the fact that the nginx body log isn't proper json, makes a few fixes and properly json formats the body log.
 
+My rsyslog setup can be found here:  https://github.com/grindthemall/rsyslogconfigs
+
 # This config yields between 3.5k and 5k messages/s per 4 CPU/16GB RAM machine.
